@@ -1,1 +1,1 @@
-# notes
+https://prowaink.github.io/notes/
