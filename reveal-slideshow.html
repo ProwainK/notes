@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+<div class="reveal">
+  <div class="slides">
+<section id="presentation"
+         data-markdown
+         data-separator="---\r?\n"
+         data-vertical="----\r?\n"
+         data-notes="^Notes:">
+</section>
+  </div>
+</div>
+
+    <!-- reveal.js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.min.js"></script>
+
+    <script>
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlSourceMD = '/slideshow/' + urlParams.get('slideshow') + '.md';
+
+      //document.getElementById("presentation").setAttribute("data-markdown",prompt("Filename:", urlSourceMD));
+      document.getElementById("presentation").setAttribute("data-markdown", urlSourceMD);
+
+      //var slideshow = remark.create({
+      //  sourceUrl: urlSourceMD
+      //});
+
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+        hideAddressBar: true,
+      });
+    </script>
+
+  </body>
+</html>
