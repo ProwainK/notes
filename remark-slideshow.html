@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+<textarea id="source">
+</textarea>
+
+    <script src="//remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlSourceMD = 'slideshow/' + urlParams.get('slideshow') + '.md';
+
+      var slideshow = remark.create({
+        sourceUrl: urlSourceMD
+      });
+    </script>
+
+  </body>
+</html>
