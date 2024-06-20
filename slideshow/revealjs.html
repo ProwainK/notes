@@ -26,7 +26,8 @@
     <script>
       // Get URL parameters
       const urlParams = new URLSearchParams(window.location.search);
-      const urlSourceMD = './slideshow/' + urlParams.get('slideshow') + '.md';
+      //const urlSourceMD = 'notes/slideshow/' + urlParams.get('md') + '.md';
+      const urlSourceMD = urlParams.get('md') + '.md';
 
       //document.getElementById("presentation").setAttribute("data-markdown",prompt("Filename:", urlSourceMD));
       document.getElementById("presentation").setAttribute("data-markdown", urlSourceMD);

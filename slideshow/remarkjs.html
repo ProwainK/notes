@@ -38,7 +38,7 @@
     <script>
       // Get URL parameters
       const urlParams = new URLSearchParams(window.location.search);
-      const urlSourceMD = 'slideshow/' + urlParams.get('slideshow') + '.md';
+      const urlSourceMD = urlParams.get('md') + '.md';
 
       var slideshow = remark.create({
         sourceUrl: urlSourceMD,
