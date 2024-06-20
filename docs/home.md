@@ -15,6 +15,7 @@
 ## 簡報系列 Slideshow
 
 * [洛克人 X6・All Stages・Xtreme (PPT)](remark-slideshow.html?slideshow=x6 ':ignore')
+* [reveal-slideshow](reveal-slideshow.html ':ignore')
 
 ## 其他
 
